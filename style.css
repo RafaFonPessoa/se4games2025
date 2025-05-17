@@ -1,0 +1,34 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+  }
+  
+  /* Sombra leve na navbar */
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo base dos links */
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    color: #111;
+    margin: 0 0.75rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Item ativo com sublinhado rosa */
+  .navbar-nav .nav-link.custom-active {
+    color: #e55819;
+  }
+  
+  .navbar-nav .nav-link.custom-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background-color: #e55819;
+    border-radius: 2px;
+  }
