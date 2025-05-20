@@ -8,17 +8,90 @@
   <title>SE4Games2025</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-</head>
-
-<body style="font-family: 'Poppins', sans-serif;">
-    <style>
+ <style>
     .justified {
       text-align: justify;
+    }
+    
+    /* Esconde a navbar mobile por padrão e mostra apenas em telas pequenas */
+    .navbar-mobile {
+      display: none;
+    }
+    
+    /* Esconde a navbar desktop em telas pequenas */
+    @media (max-width: 991.98px) {
+      .navbar-desktop {
+        display: none !important;
       }
-    </style>
+      .navbar-mobile {
+        display: block;
+      }
+    }
+    
+    /* Estilos para a navbar mobile */
+    .navbar-mobile {
+      background: white;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .navbar-mobile .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+    }
+    
+    .navbar-mobile .hamburger {
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    
+    .navbar-mobile .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #333;
+    }
+    
+    .navbar-mobile .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .navbar-mobile .nav-links.active {
+      max-height: 500px;
+      padding: 0px 0;
+    }
+    
+    .navbar-mobile .nav-links li a {
+      display: block;
+      padding: 10px 20px;
+      margin-bottom: -32px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    
+    .navbar-mobile .nav-links li a:hover {
+      background: #f5f5f5;
+    }
+  </style>
+</head>
 
-  <!-- Navbar -->
-  <nav class="navbar shadow-sm p-3 mb-5 navbar-expand-lg navbar-dark bg-white text-dark fixed-top border">
+<body style="font-family: 'Poppins', sans-serif; padding-top: 60px;"> <!-- Adicionado padding-top para compensar a navbar fixa -->
+
+<!-- Navbar Desktop - visível apenas em telas grandes -->
+<nav class="navbar-desktop navbar shadow-sm p-3 mb-5 navbar-expand-lg navbar-dark bg-white text-dark fixed-top border">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./assets/CBsoftLogo.png" alt="CBsoftLogo" width="50px" height="50px">
@@ -36,7 +109,7 @@
             <a class="nav-link custom-active text-dark" href="#">Program</a>
           </li>
           <li class="nav-item" style="margin-right: 17px;">
-            <a class="nav-link custom-active text-dark" href="#">Call For Papers</a>
+            <a class="nav-link custom-active text-dark" href="#">Call for Papers</a>
           </li>
           <li class="nav-item" style="margin-right: 17px;">
             <a class="nav-link custom-active text-dark" href="#organization">Organization</a>
@@ -47,9 +120,6 @@
           <li class="nav-item" style="margin-right: 17px;">
             <a class="nav-link custom-active text-dark" href="#">Panel</a>
           </li>
-          <!-- <li class="nav-item" style="margin-right: 17px;">
-            <a class="nav-link custom-active text-dark" href="sponsors.html">Sponsors</a>
-          </li> -->
           <li class="nav-item" style="margin-right: 17px;">
             <a class="nav-link custom-active text-dark" href="#contact">Contact</a>
           </li>
@@ -61,12 +131,35 @@
     </div>
   </nav>
 
+
+<!-- Navbar Mobile - visível apenas em telas pequenas -->
+<nav class="navbar-mobile">
+    <div class="logo">
+      <img src="./assets/CBsoftLogo.png" alt="cbsoftlogo" height="50px" width="50px">
+      CBSoft2025
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Program</a></li>
+      <li><a href="#">Call for Papers</a></li>
+      <li><a href="#organization">Organization</a></li>
+      <li><a href="#">Keynote Speaker</a></li>
+      <li><a href="#">Panel</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="./index-pt.html"><img src="./assets/brazil-flag.png" alt="Brazil Flag" style="width: 30px; height: auto; margin-bottom: 32px;"></a></li>
+    </ul>
+  </nav>
+
   <!-- Main content -->
 
   <main class="container my-5">
-    <!-- CFP -->
     <!-- Header -->
-    <header class="text-black pt-5" style="margin-top: 50px; margin-bottom: 0;" id="home">
+    <header class="text-black pt-5" style="margin-top: -40px; margin-bottom: 10px;" id="home">
       <div
         class="container d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-start">
         <img src="./assets/SE4GamesLogoText.png" alt="SE4Games 2025 Logo" class="img-fluid me-4 mb-3 mb-md-0"
@@ -465,6 +558,11 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>
