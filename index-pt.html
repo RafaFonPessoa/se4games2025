@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
+
+
+
 <body style="font-family: 'Poppins', sans-serif;">
+  <style>
+  .justified {
+    text-align: justify;
+    }
+  </style>
 
   <!-- Navbar -->
   <nav class="navbar shadow-sm p-3 mb-5 navbar-expand-lg navbar-dark bg-white text-dark fixed-top border">
@@ -22,7 +31,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item" style="margin-right: 17px;">
+          <li class="nav-item" style="margin-right: 17px; ">
             <a class="nav-link custom-active text-dark" href="#">Início</a>
           </li>
           <li class="nav-item" style="margin-right: 17px;">
@@ -40,205 +49,251 @@
           <li class="nav-item" style="margin-right: 17px;">
             <a class="nav-link custom-active text-dark" href="#">Painel</a>
           </li>
+          <!-- <li class="nav-item" style="margin-right: 17px;">
+            <a class="nav-link custom-active text-dark" href="sponsors.html">Sponsors</a>
+          </li> -->
           <li class="nav-item" style="margin-right: 17px;">
             <a class="nav-link custom-active text-dark" href="#contact">Contato</a>
           </li>
           <li class="nav-item" style="margin-right: 17px;">
-            <a class="nav-link custom-active text-dark" href="./index.html"><img src="./assets/us-flag.png" alt="brazil-flag"></a>
+            <a class="nav-link text-dark" href="./index.html"><img src="./assets/us-flag.png" alt="brazil-flag"></a>
           </li> 
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Conteúdo Principal -->
+  <!-- Main content -->
+
   <main class="container my-5">
-    <!-- Cabeçalho -->
+    <!-- CFP -->
+    <!-- Header -->
     <header class="text-black pt-5" style="margin-top: 50px; margin-bottom: 0;" id="home">
-      <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-start">
-        <img src="./assets/SE4GamesLogoPT.jpeg" alt="SE4Games 2025 Logo" class="img-fluid me-4 mb-3 mb-md-0" width="300" height="300px">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-start">
+        <img src="./assets/SE4GamesLogoPT.jpeg" alt="SE4Games 2025 Logo" class="img-fluid me-4 mb-3 mb-md-0"
+          width="300" height="300px">
       </div>
     </header>
-
-    <!-- Seção Chamada de Trabalhos -->
-    <section>
+    <section id="#home">
+      <br>
       <h2><strong>Chamada de Trabalhos</strong></h2>
       <h4>1º Workshop sobre Engenharia de Software para Desenvolvimento de Jogos (SE4Games)</h4>
-      <p><strong>Co-realizado com CBSoft 2025</strong></p>
-      
-      <p><strong>Desenvolvimento de jogos</strong> deixou de ser apenas uma arte - tornou-se um <strong>desafio complexo de engenharia de software</strong>. Jogos modernos dependem de arquiteturas escaláveis, mecânicas baseadas em IA e sistemas de alto desempenho, exigindo princípios rigorosos de engenharia de software para garantir confiabilidade, manutenibilidade e eficiência. Como principal conferência brasileira de engenharia de software, a CBSoft ainda carece de um fórum dedicado à intersecção entre <strong>desenvolvimento de jogos e engenharia de software</strong>. O <strong>1º Workshop CBSoft sobre Engenharia de Software para Desenvolvimento de Jogos (SE4Games 2025)</strong> visa preencher esta lacuna, criando um espaço para colaboração entre academia e indústria.</p>
+      <p><strong>Correalizado com CBSoft 2025</strong></p>
+
+      <p class="justified"><strong>O desenvolvimento de jogos</strong> deixou de ser apenas uma arte—é hoje um <strong>desafio altamente complexo de engenharia de software</strong>. Jogos modernos dependem de arquiteturas escaláveis,
+      mecânicas impulsionadas por IA e sistemas de alto desempenho, exigindo princípios rigorosos de engenharia de software para garantir confiabilidade, manutenibilidade e eficiência.
+      Apesar dos avanços da engenharia de software em diversos domínios, a indústria de desenvolvimento de jogos ainda enfrenta desafios únicos que requerem soluções específicas.
+      Como a mais importante conferência brasileira de engenharia de software, a CBSoft ainda carece de um fórum dedicado à interseção entre <strong>desenvolvimento de jogos e engenharia de software</strong>.
+      Essa é uma lacuna significativa, considerando o rápido crescimento da indústria de jogos no Brasil, o florescimento de desenvolvedores independentes e uma comunidade acadêmica ativa que realiza pesquisas avançadas na área.
+      <strong>O 1º Workshop da CBSoft sobre Engenharia de Software para Desenvolvimento de Jogos (SE4Games 2025)</strong> busca preencher essa lacuna, estabelecendo um espaço dedicado para estudantes, pesquisadores e profissionais da indústria colaborarem, trocarem ideias e avançarem nas práticas de engenharia de software aplicadas ao desenvolvimento de jogos.
+      Este workshop é focado em engenharia de software para jogos, abrangendo <strong>jogos sérios</strong> e <strong>de entretenimento, gamificação, arquiteturas escaláveis de jogos, jogos em nuvem, sistemas baseados em IA, jogabilidade adaptativa, geração procedural de conteúdo, testes automatizados</strong> e <strong>otimização de desempenho</strong>.
+      Ao trazer essa discussão crítica para a CBSoft, o SE4Games 2025 pretende se tornar um evento de referência, fortalecendo a ponte entre academia e indústria, impulsionando a inovação e promovendo avanços na pesquisa em engenharia de software para jogos.
+      </p>
       <br>
     </section>
 
-    <!-- Tópicos de Interesse -->
     <section id="cfp">
       <h2><strong>Tópicos de Interesse</strong></h2>
-      <p><strong>SE4Games 2025</strong> recebe contribuições na intersecção entre engenharia de software e desenvolvimento de jogos, incluindo jogos de entretenimento, sérios e sistemas gamificados.</p>
-      
+      <p class="justified"><strong>SE4Games 2025</strong> recebe contribuições na interseção entre engenharia de software e desenvolvimento de jogos, abrangendo jogos de entretenimento, jogos sérios e sistemas gamificados.
+      Temos particular interesse em abordagens interdisciplinares, inovadoras e orientadas por impacto, distribuídas entre as áreas listadas abaixo. 
+      Esses tópicos refletem temas centrais da engenharia de software—como arquitetura, modelos de ciclo de vida, qualidade, suporte por ferramentas e métricas—aplicadas aos desafios do desenvolvimento de jogos, adaptação de sistemas e interação centrada no jogador.
+      </p>
+
       <ul>
-        <li>Engenharia de requisitos e arquitetura de software</li>
-        <li>Modelos ágeis e DevOps para desenvolvimento iterativo</li>
-        <li>Automação de builds e gestão de configuração</li>
-        <li>Práticas éticas e inclusivas no desenvolvimento</li>
-        <li>Geração procedural de conteúdo e sistemas adaptativos</li>
-        <li>Testes automatizados e garantia de qualidade</li>
-        <li>Ferramentas e infraestrutura para desenvolvimento</li>
-        <li>Jogos em nuvem e realidade estendida (XR)</li>
+        <li>Engenharia de requisitos, arquitetura de software, design modular e manutenibilidade</li>
+        <li>Modelos de ciclo de vida ágeis, DevOps e híbridos adaptados ao desenvolvimento iterativo de jogos</li>
+        <li>Automação de builds, controle de versão e gestão de configuração em pipelines de jogos</li>
+        <li>Práticas éticas e inclusivas no desenvolvimento de jogos, incluindo conformidade com padrões, responsabilidade em sistemas persuasivos e co-design com partes interessadas</li>
+        <li>Design baseado em modelos, análise e transformação de sistemas de jogos</li>
+        <li>Métodos formais para garantir correção, segurança, flexibilidade e coerência da jogabilidade</li>
+        <li>Frameworks de design emergente, incluindo geração procedural de conteúdo impulsionada por IA e dinâmicas de jogabilidade</li>
+        <li>Sistemas de jogabilidade adaptativos e baseados em IA, incluindo mecânicas sensíveis a emoções, geração de expressões faciais, feedback baseado em biometria, personalização narrativa e ajuste dinâmico de dificuldade</li>
+        <li>Uso de grandes modelos de linguagem (LLMs) em personagens virtuais e NPCs para diálogo, interação e comportamento expressivo</li>
+        <li>Pipelines de aprendizado de máquina integrados a dados de jogabilidade em tempo real</li>
+        <li>Monitoramento em larga escala, telemetria e visualização do comportamento dos jogadores</li>
+        <li>Atributos de qualidade em jogos: usabilidade, acessibilidade, inclusão, desempenho, segurança</li>
+        <li>Estratégias de testes e validação, incluindo testes automatizados, playtesting e avaliação baseada em simulação, com atenção a sistemas adaptativos, saídas geradas por LLMs e comportamento expressivo em personagens virtuais</li>
+        <li>Frameworks de avaliação e métricas para a eficácia do software e da jogabilidade, incluindo abordagens quantitativas, qualitativas e mistas</li>
+        <li>Ferramentas e infraestrutura para desenvolvimento de jogos, incluindo engines, SDKs, toolchains, middleware e serviços de implantação</li>
+        <li>Sistemas de animação, simulação física e integração de captura de movimento (MoCap) em pipelines de desenvolvimento de jogos</li>
+        <li>Ferramentas e técnicas de visualização para apoiar o desenvolvimento de jogos, depuração, análise do comportamento dos jogadores e design de sistemas</li>
+        <li>Suporte a modding, reutilização de ativos e arquiteturas para extensão de franquias</li>
+        <li>Interoperabilidade multiplataforma e infraestrutura para jogos em nuvem</li>
+        <li>Jogos no metaverso, realidade estendida (XR) e mundos virtuais persistentes</li>
+        <li>Educação em engenharia de software por meio de jogos e para jogos</li>
       </ul>
       <br>
     </section>
 
-    <!-- Diretrizes para Submissão -->
     <section id="cfp">
-      <h2><strong>Diretrizes para Submissão</strong></h2>
-      <p>
-        Os artigos podem ser submetidos em português ou inglês. Submissões em inglês são fortemente encorajadas. Todos devem seguir as <a href="https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr">diretrizes da SBC</a> e ser enviados via <a href="https://jems3.sbc.org.br/events/342">JEMS</a>.
+      <h2><strong>Diretrizes de Submissão</strong></h2>
+      <p class="justified">
+        Os artigos podem ser submetidos em português ou inglês.  
+        Submissões em português não requerem resumo em inglês. 
+        Submissões em inglês são fortemente encorajadas, para que sua pesquisa possa ser acessada por pesquisadores que não falam português.
+        Todos os artigos devem seguir as <a href="https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr">diretrizes de formatação da SBC</a> e ser enviados em formato PDF por meio do sistema 
+        <a href="https://jems3.sbc.org.br/events/342">JEMS</a>.  
+        Esta edição do SE4Games aceita dois tipos de contribuições:
       </p>
 
-      <p>
-        <strong>Artigos Completos (Máx. 7 páginas + referências):</strong><br>
-        Pesquisas originais ou relatos de experiência com contribuições relevantes para a área.
+      <p class="justified">
+          <strong>Artigos Completos</strong> (Máx. 7 páginas + 1 página de referências)<br>
+          São bem-vindas pesquisas originais ou relatos de experiência que apresentem ideias, resultados ou abordagens técnicas inovadoras em Engenharia de Software para Jogos. 
+          Os artigos devem descrever claramente o problema abordado, a solução proposta ou os insights obtidos, suas questões de pesquisa e a relevância para as práticas de engenharia de software e desenvolvimento de jogos.
       </p>
-      
-      <p>
-        <strong>Artigos Curtos (Máx. 3 páginas + referências):</strong><br>
-        Experiências práticas na aplicação de princípios de engenharia de software em projetos reais.
+
+      <p class="justified">
+      <strong>Artigos Curtos</strong> (Máx. 3 páginas + 1 página de referências)<br>
+      Convidamos desenvolvedores, designers e engenheiros a compartilharem experiências práticas na aplicação de princípios de engenharia de software em projetos reais de jogos.       
+      Os tópicos podem incluir ferramentas, testes, pipelines, decisões de design, práticas de equipe, desafios técnicos, resultados preliminares e lições aprendidas durante a produção.
+      Todas as submissões devem seguir o processo de revisão duplamente anônima. Para preservar o anonimato:
       </p>
-      
-      <p>Todas as submissões devem seguir processo duplo-cego:</p>
       <ul>
-        <li>Não incluir nomes ou afiliações</li>
-        <li>Citações próprias na terceira pessoa</li>
-        <li>Artefatos suplementares anonimizados</li>
+        <li>Não inclua nomes ou afiliações dos autores no manuscrito.</li>
+        <li>Escreva qualquer autocitação em terceira pessoa.</li>
+        <li>Se for submeter artefatos suplementares (por exemplo, ferramentas, dados, vídeos), anonimize-os usando serviços como o <a href="https://anonymous.4open.science/">Anonymous GitHub</a>.</li>
       </ul>
-      <br>
+
+      <p class="justified">
+        O SE4Games encoraja os autores a compartilharem publicamente seus artefatos. 
+        Caso a anonimização não seja viável no momento da submissão, os links poderão ser incluídos na versão final, caso o trabalho seja aceito
+      </p>
     </section>
 
-    <!-- Datas Importantes -->
     <section>
       <h2 class="mt-4"><strong>Datas Importantes</strong></h2>
+
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
           <tbody>
             <tr>
               <th scope="row">Registro do Artigo</th>
-              <td>30 de Junho de 2025</td>
+              <td>Junho 30, 2025</td>
             </tr>
             <tr>
               <th scope="row">Submissão do Artigo</th>
-              <td>4 de Julho de 2025</td>
+              <td>Julho 4, 2025</td>
             </tr>
             <tr>
-              <th scope="row">Notificação aos Autores</th>
-              <td>4 de Agosto de 2025</td>
+              <th scope="row">Notificação ao Autor</th>
+              <td>Agosto 4, 2025</td>
             </tr>
             <tr>
               <th scope="row">Versão Final</th>
-              <td>11 de Agosto de 2025</td>
+              <td>Agosto 11, 2025</td>
             </tr>
             <tr>
               <th scope="row">Data do Workshop</th>
-              <td>23 de Setembro de 2025</td>
+              <td>Setembro 23, 2025</td>
             </tr>
           </tbody>
         </table>
-      </div>
-      <br>
+        <br>
     </section>
 
-    <!-- Processo de Revisão -->
     <section id="cfp">
       <h2><strong>Processo de Revisão</strong></h2>
-      <p>
-        Os artigos serão publicados nos anais do CBSoft 2025 na <a href="https://sol.sbc.org.br/">Biblioteca Digital da SBC</a>. Cada submissão será avaliada por três membros do comitê.
+      <p class="justified">
+          Os anais do workshop SE4Games serão publicados como parte dos anais do CBSoft 2025 e disponibilizados online através da <a href="https://sol.sbc.org.br/index.php/indice">Biblioteca Digital da SBC (SOL)</a>. 
+          O número de artigos aceitos dependerá do programa final, bem como da qualidade e quantidade das submissões.
+          
+          O processo de revisão seguirá o formato duplamente cego: autores e revisores devem garantir o anonimato. 
+          Cada submissão será avaliada por três membros do comitê de programa, selecionados por sua expertise em áreas alinhadas ao escopo do workshop. 
+          O comitê inclui pesquisadores e docentes de instituições brasileiras e internacionais.
       </p>
-      
-      <p><strong>Critérios de Avaliação:</strong></p>
+
+      <p>Os artigos <strong>serão avaliados</strong> com base em:</p>
       <ul>
-        <li>Originalidade e relevância</li>
-        <li>Contribuição técnica</li>
+       <li>Originalidade e atualidade</li>
+        <li>Contribuição técnica e solidez</li>
+        <li>Relevância para engenharia de software aplicada ao desenvolvimento de jogos</li>
         <li>Rigor metodológico</li>
-        <li>Clareza na apresentação</li>
+        <li>Verificabilidade, transparência e reprodutibilidade</li>
+        <li>Clareza, organização e apresentação</li>
+        <li>Embora não obrigatório, o envio de materiais de replicação ou artefatos é incentivado e será visto positivamente na avaliação</li>
       </ul>
-      
-      <p><strong>Motivos para Rejeição Sumária:</strong></p>
+
+      <p>As submissões <strong>serão rejeitadas sumariamente</strong> se:</p>
       <ul>
-        <li>Fora do escopo</li>
-        <li>Publicação prévia</li>
-        <li>Formatação incorreta</li>
+        <li>Estiverem fora do escopo do workshop</li>
+        <li>Tiverem sido previamente publicadas</li>
+        <li>Não seguirem as diretrizes de formatação</li>
+        <li>Não atenderem aos requisitos de anonimização</li>
       </ul>
       <br>
     </section>
 
-    <!-- Uso de IA -->
     <section id="cfp">
-      <h2><strong>Uso de Ferramentas de IA</strong></h2>
-      <p>
-        É proibido listar ferramentas de IA como coautoras. Todo conteúdo deve ser trabalho intelectual dos autores humanos listados.
-      </p>
-      <br>
+      <h2><strong>Uso de Ferramentas de Inteligência Artificial (IA)</strong></h2>
+      <p class="justified">
+        Ao submeter trabalhos ao SE4Games 2025, os autores concordam em cumprir a política de uso de IA do evento, inspirada nas diretrizes da IEEE, ACM e Springer. 
+        Não é permitido listar ferramentas de IA (ex.: ChatGPT) como coautoras, nem submeter conteúdos totalmente gerados por ferramentas de IA sem autoria ou supervisão humana. 
+        <strong>Todo o conteúdo submetido deve ser trabalho intelectual dos autores humanos listados, que assumem total responsabilidade por sua originalidade, precisão e integridade.</strong>
+        <br>
+        <br>
     </section>
 
-    <!-- Apresentação e Publicação -->
     <section id="organization">
       <h2><strong>Apresentação e Publicação</strong></h2>
-      <p>
-        Artigos aceitos devem ser revisados e pelo menos um autor deve se registrar e apresentar o trabalho.
+      <p class="justified">
+         Os artigos aceitos deverão ser revisados para a versão final (camera-ready) e submetidos dentro do prazo estabelecido. 
+        Para garantir a publicação, pelo menos um autor deve se registrar no evento e apresentar o trabalho durante o workshop SE4Games 2025.
       </p>
     </section>
-    
-    <!-- Organização -->
+
+    <!-- Contact -->
     <section class="mt-5">
-      <h2><strong>Organização</strong></h2>
+      <h2><strong>Coordenadores do Comitê de Programa</strong></h2>
       <ul>
-        <li>Andréia Formico (Unifor)</li>
-        <li>Troy Kohwalter (UFF)</li>
+        <li>Andréia Formico (Unifor, Brasil)</li>
+        <li>Troy Kohwalter (UFF, Brasil)</li>
       </ul>
       <br>
-      
       <div class="container">
         <div class="row g-4">
-          <!-- Cards dos Coordenadores -->
+
+          <!-- Card 1 -->
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100 text-center shadow">
-              <img src="./assets/commitee/Andreia.JPG" class="card-img-top" alt="Andréia Formico">
+              <img src="./assets/commitee/Andreia.JPG" class="card-img-top" alt="John Doe">
               <div class="card-body">
                 <h5 class="card-title">Andréia Formico</h5>
-                <p class="card-text">Universidade de Fortaleza</p>
+                <p class="card-text">Unifor</p>
               </div>
             </div>
           </div>
-          
+
+          <!-- Card 2 -->
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100 text-center shadow">
-              <img src="./assets/commitee/Troy.jpeg" class="card-img-top" alt="Troy Kohwalter">
+              <img src="./assets/commitee/Troy.jpeg" class="card-img-top" alt="Jane Smith">
               <div class="card-body">
                 <h5 class="card-title">Troy Kohwalter</h5>
-                <p class="card-text">Universidade Federal Fluminense</p>
+                <p class="card-text">UFF</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <h2 class="mt-5"><strong>Comitê do Programa</strong></h2> 
-      <ul>
-        <li>André Brandão (UFABC)</li>
-        <li>Cristiano Politowski (Ontario Tech University)</li>
-        <li>Edirlei Soares de Lima (BUAS)</li>
-        <li>Esteban Clua (UFF)</li>
-        <li>Fabio Petrillo (ÉTS)</li>
-        <li>Fernando Trinta (UFC)</li>
-        <li>Jucimar da Silva Junior (UEA)</li>
-        <li>Kiev Gama (UFPE)</li>
-        <li>Marcela Pessoa (UEA)</li>
-        <li>Nabor Mendonça (Unifor)</li>
-        <li>Rodrigo Santos (UNIRIO)</li>
-        <li>Windson Viana (UFC)</li>
-      </ul>
-    </section>
 
-    <br>
+          <ul>
+        </div>
+        <br>
+        <br>
+        <h2><strong>Comitê de Programa:</strong></h2>
+          <li>André Brandão (UFABC, Brasil)</li>
+          <li>Cristiano Politowski (Ontario Tech University, Canadá)</li>
+          <li>Edirlei Soares de Lima (Breda University of Applied Sciences, Países Baixos)</li>
+          <li>Esteban Clua (UFF, Brasil)</li>
+          <li>Fabio Petrillo (ÉTS, Canadá)</li>
+          <li>Fernando Trinta (UFC, Brasil)</li>
+          <li>Jucimar da Silva Junior (UEA, Brasil)</li>
+          <li>Kiev Gama (Cin/UFPE, Brasil)</li>
+          <li>Marcela Pessoa (UEA, Brasil)</li>
+          <li>Nabor Mendonça (Unifor, Brasil)</li>
+          <li>Rodrigo Santos (UNIRIO, Brasil)</li>
+          <li>Windson Viana (UFC, Brasil)</li>
+        </ul>
+        <br>
         <div class="container">
           <div class="row g-4">
 
@@ -248,8 +303,7 @@
                 <img src="./assets/commitee/Andre.jpeg" class="card-img-top" alt="John Doe">
                 <div class="card-body">
                   <h5 class="card-title">André Brandão</h5>
-                  <p class="card-text">Universidade Federal do ABC</p>
-                  <p class="card-text">(UFABC)</p>
+                  <p class="card-text">UFABC</p>
                 </div>
               </div>
             </div>
@@ -260,7 +314,7 @@
                 <img src="./assets/commitee/Cristiano.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Cristiano Politowski </h5>
-                  <p class="card-text">Ontario Tech University</p>
+                  <p class="card-text" style="white-space: nowrap;">Ontario Tech University</p>
                 </div>
               </div>
             </div>
@@ -269,8 +323,7 @@
                 <img src="./assets/commitee/Edirlei.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Edirlei Soares de Lima</h5>
-                  <p class="card-text">Breda Univ. of Applied Sciences</p>
-                  <p class="card-text">(BUAS)</p>
+                  <p class="card-text">BUAS</p>
                 </div>
               </div>
             </div>
@@ -279,8 +332,7 @@
                 <img src="./assets/commitee/Esteban.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Esteban Clua</h5>
-                  <p class="card-text">Universidade Federal Fluminense</p>
-                  <p class="card-text">(UFF)</p>
+                  <p class="card-text">UFF</p>
                 </div>
               </div>
             </div>
@@ -290,8 +342,7 @@
                 <img src="./assets/commitee/Fabio.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Fabio Petrillo</h5>
-                  <p class="card-text">École de Technologie Supérieure</p>
-                  <p class="card-text">(ÉTS)</p>
+                  <p class="card-text">ÉTS</p>
                 </div>
               </div>
             </div>
@@ -300,8 +351,7 @@
                 <img src="./assets/commitee/Fernando.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Fernando Trinta</h5>
-                  <p class="card-text">Universidade Federal do Ceará</p>
-                  <p class="card-text">(UFC)</p>
+                  <p class="card-text">UFC</p>
                 </div>
               </div>
             </div>
@@ -310,8 +360,7 @@
                 <img src="./assets/commitee/Juscimar.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Jucimar da Silva Junior</h5>
-                  <p class="card-text">Univ. do Estado do Amazonas</p>
-                  <p class="card-text">(UEA)</p>
+                  <p class="card-text">UEA</p>
                 </div>
               </div>
             </div>
@@ -320,8 +369,7 @@
                 <img src="./assets/commitee/Kiev.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Kiev Gama</h5>
-                  <p class="card-text">Univ. Federal de Pernambuco</p>
-                  <p class="card-text">(Cin/UFPE)</p>
+                  <p class="card-text">Cin/UFPE</p>
                 </div>
               </div>
             </div>
@@ -330,8 +378,7 @@
                 <img src="./assets/commitee/Marcela.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Marcela Pessoa</h5>
-                  <p class="card-text">Univ. do Estado do Amazonas</p>
-                  <p class="card-text">(UEA)</p>
+                  <p class="card-text">UEA</p>
                 </div>
               </div>
             </div>
@@ -340,8 +387,7 @@
                 <img src="./assets/commitee/Nabor.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Nabor Mendonça</h5>
-                  <p class="card-text">Universidade de Fortaleza</p>
-                  <p class="card-text">(Unifor)</p>
+                  <p class="card-text">Unifor</p>
                 </div>
               </div>
             </div>
@@ -350,8 +396,7 @@
                 <img src="./assets/commitee/Rodrigo.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Rodrigo Santos</h5>
-                  <p class="card-text">Univ. Federal do Estado do RJ</p>
-                  <p class="card-text">(UNIRIO)</p>
+                  <p class="card-text">UNIRIO</p>
                 </div>
               </div>
             </div>
@@ -360,8 +405,7 @@
                 <img src="./assets/commitee/Windson.jpeg" class="card-img-top" alt="Jane Smith">
                 <div class="card-body">
                   <h5 class="card-title">Windson Viana</h5>
-                  <p class="card-text">Universidade Federal do Ceará</p>
-                  <p class="card-text">(UFC)</p>
+                  <p class="card-text">UFC</p>
                 </div>
               </div>
             </div>
@@ -371,17 +415,15 @@
     </section>
     <br>
     <br>
-
-    <!-- Contato -->
-    <section id="contact" class="mt-5">
+    <section id="contact">
       <h2><strong>Contato</strong></h2>
       <p>
-        Para dúvidas: <a href="mailto:SE4Games2025@googlegroups.com">SE4Games2025@googlegroups.com</a>
+        Em caso de dúvidas sobre o artigo ou o evento, não hesite em enviar um e-mail para <a href="mailto:SE4Games2025@googlegroups.com">SE4Games2025@googlegroups.com</a>
       </p>
-    </section> 
+    </section>
   </main>
 
-  <!-- Rodapé -->
+  <!-- Footer -->
   <footer class="bg-light text-center py-4 border">
     <h6 class="mb-0">&copy; 2025 CBSoft. Todos os direitos reservados.</h6>
     <p style="font-size: 11px;">Mantido por Rafael Pessoa & Andréia Formico</p>
@@ -389,4 +431,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
