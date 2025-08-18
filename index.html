@@ -513,37 +513,76 @@
       </div>
     </div>
 
-    <!-- Panel -->
-    <section id="panel" class="mt-5">
-      <h2><strong>Panel</strong></h2>
-      <div class="container">
-        <div class="row g-4 justify-content-center">
+  <section id="panel" class="mt-5">
+    <h2><strong>Panel</strong></h2>
+    <h4 class="text-center mb-4"><strong>Theme: AI and the Future of Game Development</strong></h4>
+    <div class="container">
+      <div class="row g-4 justify-content-center">
 
-          <!-- Panelist 1 -->
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100 text-center shadow">
-              <img src="./assets/panel/Tulio.jpeg" class="card-img-top" alt="Tulio Caraciolo">
-              <div class="card-body">
-                <h5 class="card-title">Tulio Caraciolo</h5>
-                <p class="card-text">Geppetto & Manifesto Games</p>
-              </div>
+        <!-- Panelist 1 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow">
+            <img src="./assets/panel/Tulio.jpeg" class="card-img-top" alt="Tulio Caraciolo">
+            <div class="card-body">
+              <h5 class="card-title">Tulio Caraciolo</h5>
+              <p class="card-text"><strong>Geppetto & Manifesto Games</strong></p>
+              <p class="text-muted small">Game designer and entrepreneur.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bioTulio">
+                Read More
+              </button>
             </div>
           </div>
+        </div>
 
-          <!-- Panelist 2 -->
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100 text-center shadow">
-              <img src="./assets/commitee/Nabor.jpeg" class="card-img-top" alt="Nabor Mendonça">
-              <div class="card-body">
-                <h5 class="card-title">Nabor Mendonça</h5>
-                <p class="card-text">Unifor</p>
-              </div>
+        <!-- Panelist 2 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow">
+            <img src="./assets/commitee/Nabor.jpeg" class="card-img-top" alt="Nabor Mendonça">
+            <div class="card-body">
+              <h5 class="card-title">Nabor Mendonça</h5>
+              <p class="card-text"><strong>Unifor</strong></p>
+              <p class="text-muted small">Professor and researcher in software engineering and AI.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bioNabor">
+                Read More
+              </button>
             </div>
           </div>
+        </div>
 
+      </div>
+    </div>
+  </section>
+
+    <!-- Modal Tulio -->
+  <div class="modal fade" id="bioTulio" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Tulio Caraciolo - Biography</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="contentTulio">
+          <!-- Injected via JS -->
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <!-- Modal Nabor -->
+  <div class="modal fade" id="bioNabor" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Nabor Mendonça - Biography</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="contentNabor">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <!-- Contact -->
   <section id="organization" class="mt-5">
@@ -554,7 +593,7 @@
       </ul>
       <br>
       <div class="container">
-        <div class="row g-4">
+        <div class="row g-4 d-flex justify-content-center">
 
           <!-- Card 1 -->
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -599,10 +638,10 @@
         </ul>
         <br>
         <div class="container">
-          <div class="row g-4">
+          <div class="row g-4 justify-content-center">
 
             <!-- Card 1 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
               <div class="card h-100 text-center shadow">
                 <img src="./assets/commitee/Andre.jpeg" class="card-img-top" alt="John Doe">
                 <div class="card-body">
@@ -749,6 +788,32 @@
       document.getElementById("navLinks").classList.toggle("active");
     }
   </script>
+    <script>
+    const bios = {
+      Tulio: `
+        <p>
+          Tulio Caraciolo is a Brazilian game designer, entrepreneur, and co-founder of Geppetto & Manifesto Games.
+          He has worked on innovative projects in interactive media and is an active voice in the Brazilian games industry.
+        </p>
+      `,
+      Nabor: `
+        <p>
+          Nabor C. Mendonça holds a B.Sc. in Data Processing from UFAM, an M.Sc. in Computer Science from UNICAMP,
+          and a PhD in Computing from Imperial College London. He was a visiting researcher at Carnegie Mellon University, USA, 
+          between 2017 and 2018, where he joined the software architecture research group led by Prof. David Garlan.
+        </p>
+        <p>
+          He has been a professor at the Graduate Program in Applied Informatics at the University of Fortaleza since 2001,
+          and a CNPq research productivity fellow (level 2) since 2008. His main research areas include software engineering,
+          distributed systems, self-adaptive systems, resilient systems, and generative artificial intelligence and its applications.
+        </p>
+      `
+    };
+
+    document.getElementById("contentTulio").innerHTML = bios.Tulio;
+    document.getElementById("contentNabor").innerHTML = bios.Nabor;
+  </script>
+
 </body>
 
 </html>
